@@ -20,3 +20,17 @@ container.addEventListener("mouseover", (e) => {
     (y / 100) * -10
   }px)`;
 });
+
+// Hamburger Menu
+
+const hamMenu = document.querySelector(".hamMenu");
+const hamBtn = document.querySelector(".ham");
+const closeBtn = document.querySelector(".close");
+
+hamBtn.addEventListener("click", () => {
+  hamMenu.classList.toggle("show");
+});
+
+closeBtn.addEventListener("click", () => {
+  hamMenu.classList.remove("show");
+});
